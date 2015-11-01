@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1446333671 source:/home/ateldy/MaisCultura/ProjetoPDS/main.cpp
+	<stdio.h>
+	<stdlib.h>
+
