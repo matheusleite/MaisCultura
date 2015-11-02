@@ -1,57 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void create(char *literatura, char *autor, char *publicacao){
-}
+int main(){
 
-void list(){
-}
 
-void edit(){
-}
+int ans = 1;
+    do{
 
-void remove(){
-}
-
-int main()
-{
     printf("MENU\n");
     printf("1. Adicionar Literatura\n");
     printf("2. Listar Literaturas\n");
     printf("3. Editar Literatura\n");
     printf("4. Remover Literatura\n");
     printf("0. Voltar\n");
-    int ans;
     scanf("%d", &ans);
+    FILE *dados;
 
     switch(ans){
 
         case 1:
-            char nome_literatura[100], nome_autor[100], data_publicacao[30];
+
+
+            dados = fopen("dados.txt", "a");
+
+            char livro[100], autor[100], data[30];
             printf("Adicionar Literatura");
             printf("\nInsira o nome da literatura: ");
-            scanf("%s", &nome_literatura);
+            scanf("%s", &livro);
             printf("\nInsira o nome do autor: ");
-            scanf("%s", &nome_autor);
+            scanf("%s", &autor);
             printf("\nInsira a data de publicação: ");
-            scanf("%s", &data_publicacao);
+            scanf("%s", &data);
 
-            create(nome_literatura, nome_autor, data_publicacao);
+            fprintf(dados, "%s, %s, %s\n", livro, autor, data);
+            fclose(dados);
+            printf("Livro adicionado ao arquivo!");
+
             break;
 
         case 2:
-            list();
+
             break;
 
         case 3:
-            edit();
+
             break;
 
         case 4:
-            remove();
+
             break;
-
-
     }
+
+    }while(ans!=0);
+
     return 0;
 }
