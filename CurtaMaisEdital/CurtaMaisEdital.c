@@ -1,3 +1,8 @@
+//Universidade de Brasília. Novembro de 2015
+
+//Fábio Barbosa Pinto 11/0116356
+//Matheus Clemente Carvalho de Azevedo 15/0042817
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
