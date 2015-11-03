@@ -21,7 +21,7 @@ int ans = 1;
 
         case 1:
 
-
+			// criando arquivo
         	dados = fopen("dados.txt", "a");
 
             char nome_concerto[100], local[100], data_evento[30];
