@@ -17,6 +17,9 @@ void buscarEdital(void);
 void atualizarConteudo(void);
 void excluirEdital(void);
 
+
+
+
 int main(void)
 {
     int opcao;
