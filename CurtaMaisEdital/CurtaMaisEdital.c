@@ -16,7 +16,7 @@ struct edital
     char conteudo[300];
 };
 
-int exibirMenu(void);
+int exibirMenuEdital(void);
 void criarEdital(void);
 void buscarEdital(void);
 void atualizarConteudo(void);
@@ -31,7 +31,7 @@ int main(void)
 
     do
     {
-        opcao = exibirMenu();
+        opcao = exibirMenuEdital();
 
         switch (opcao)
         {
@@ -59,7 +59,7 @@ int main(void)
     return 0;
 }
 
-int exibirMenu(void)
+int exibirMenuEdital(void)
 {
     int opcao;
 
