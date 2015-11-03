@@ -60,7 +60,7 @@ int Exibir_menu(void)
     printf("\tEXPOSICOES\n\n");
     printf(" 1. Criar Exposicao\n");
     printf(" 2. Buscar Exposicao\n");
-    printf(" 3. Atuzlizar Descricao\n");
+    printf(" 3. Atualizar Descricao\n");
     printf(" 4. Excluir Exposicao\n");
     printf(" 5. Encerrar \n\n");
     printf(" Digite a opcao desejada: ");
