@@ -1,6 +1,6 @@
-//Universidade de Brasília. Novembro de 2015
+//Universidade de BrasÃ­lia. Novembro de 2015
 
-//Fábio Barbosa Pinto 11/0116356
+//FÃ¡bio Barbosa Pinto 11/0116356
 //Matheus Clemente Carvalho de Azevedo 15/0042817
 
 #include <stdio.h>
@@ -264,8 +264,8 @@ void excluirEdital(void)
         fclose(arquivoAntigo);
         fclose(arquivoAtualizado);
 
-        remove("editais.dat");
-        rename("temp.dat", "editais.dat");
+        remove("edital.dat");
+        rename("temp.dat", "edital.dat");
 
         if (!encontrado)
         {
@@ -281,6 +281,6 @@ void excluirEdital(void)
     else
     {
         printf("\n Nenhum edital encontrado!");
-        Sleep(1000);
+        Sleep(2000);
     }
 }
