@@ -9,7 +9,7 @@ int ans = 1;
 
     printf("MENU\n");
     printf("1. Adicionar Literatura\n");
-    printf("2. Listar Literaturas\n");
+    printf("2. Listar Literatura\n");
     printf("3. Editar Literatura\n");
     printf("4. Remover Literatura\n");
     printf("0. Voltar\n");
@@ -29,12 +29,12 @@ int ans = 1;
             scanf("%s", &livro);
             printf("\nInsira o nome do autor: ");
             scanf("%s", &autor);
-            printf("\nInsira a data de publicação: ");
+            printf("\nInsira a data de publicacao: ");
             scanf("%s", &data);
 
             fprintf(dados, "%s, %s, %s\n", livro, autor, data);
             fclose(dados);
-            printf("Livro adicionado ao arquivo!");
+            printf("Livro adicionado ao arquivo!\n");
 
             break;
 
