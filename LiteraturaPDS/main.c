@@ -40,6 +40,36 @@ int ans = 1;
 
         case 2:
 
+            printf("\nVisualizar livros: \n\n");
+
+            dados = fopen("dados.txt", "r");
+
+
+            int nLinhas=0;
+
+            char c;
+            while(!feof(dados)){
+                c = fgetc(dados);
+                if(c =='\n'){
+                    nLinhas++;
+                }
+            }
+            rewind(dados);
+
+
+            char line[150];
+            int n = 1;
+            int count=0;
+
+            while(count<nLinhas){
+                fgets(line, 150, dados);
+                printf("%d - %s", n, line);
+                n++;
+                count++;
+            }
+
+            fclose(dados);
+            printf("\n");
             break;
 
         case 3:
