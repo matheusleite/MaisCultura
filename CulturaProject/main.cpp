@@ -1,3 +1,8 @@
+//Universidade de Brasília. Novembro de 2015
+
+//Daniel Farias Corre 15/0008163
+//Leonardo Arthur Degolim Oliveira 14/0025171
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
