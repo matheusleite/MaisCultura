@@ -160,7 +160,7 @@ void buscarEdital(void)
 void atualizarConteudo(void)
 {
     int encontrado = 0;
-    char tituloEdital[30], conteudo[15];
+    char tituloEdital[30], conteudo[300];
     struct edital editalTemporario;
     FILE *arquivoAntigo = NULL, *arquivoAtualizado = NULL;
 
